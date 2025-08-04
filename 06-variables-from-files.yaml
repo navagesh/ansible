@@ -1,9 +1,6 @@
 - name: variables from PLAY level
   hosts: localhost
-  vars:
-    course: "Devops"
-    Trainer: "Sivakumar"
-    Duration: "110Hrs"
+  
   vars_files:
   - variable.yaml
   tasks:
