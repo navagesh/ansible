@@ -5,7 +5,7 @@
   - name: install or uninstall packages
     ansible.builtin.package:
       name: "{{item}}"
-      state: {{item.state}} #item is default keyword.
+      state: "{{item.state}}"   #item is default keyword.
     loop:
       - {name: 'git', state: 'present'}
       - {name: 'mysql', state: 'absent'}
