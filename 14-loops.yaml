@@ -5,8 +5,7 @@
     ansible.builtin.package:
       name: "{{item}}"
       state: present #item is default keyword.
-    loops:
+    loop:
       -git
       -mysql
       -postfix
-      
