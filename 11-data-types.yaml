@@ -18,7 +18,7 @@ tasks:
     msg: "name:{{NAME}}"
 - name: print list
   ansible.builtin.debug:
-    msg: "skills:{{skills}}"
+    msg: "skills:{{Skills}}"
 - name: print map
   ansible.builtin.debug:
     msg: "Experience:{{Experience}}"
