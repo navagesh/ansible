@@ -11,4 +11,4 @@
   - name: print and check the values
     ansible.builtin.debug:
       msg: "username is:{{USERNAME}}, password IS
-      {{PASSWORDss}}"
+      {{PASSWORD}}"
