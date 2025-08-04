@@ -12,16 +12,16 @@
         AWS: 6
         Docker: 4
     Trainer: true # boolean
-tasks:
-- name: print key value pair
-  ansible.builtin.debug:
-    msg: "name:{{NAME}}"
-- name: print list
-  ansible.builtin.debug:
-    msg: "skills:{{Skills}}"
-- name: print map
-  ansible.builtin.debug:
-    msg: "Experience:{{Experience}}"
-- name: print boolean
-  ansible.builtin.debug:
-    msg: "is he trainer:{{Trainer}}"
+  tasks:
+  - name: print key value pair
+    ansible.builtin.debug:
+     msg: "name:{{NAME}}"
+  - name: print list
+    ansible.builtin.debug:
+     msg: "skills:{{Skills}}"
+  - name: print map
+    ansible.builtin.debug:
+     msg: "Experience:{{Experience}}"
+  - name: print boolean
+    ansible.builtin.debug:
+     msg: "is he trainer:{{Trainer}}"
